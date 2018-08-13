@@ -1,0 +1,216 @@
+*
+{
+	font-family: 'Dancing Script', cursive;
+}
+body{
+	background-color:  #02010a;
+}
+.contenido
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	animation: 1s ease-out 0s 1 arriba;
+}
+/*Logo y menu*/
+header
+{
+	width: 100%;
+	background-color:  #5b7989;
+	border-radius: 10px 10px 0px 0px;
+	display: flex;
+}
+.logo
+{
+	width: 60%;
+	color: white;
+	text-shadow: 2px 2px #02010a;
+}
+header nav
+{
+	margin-top: 1em;
+	width: 40%;
+	text-align: right;
+}
+header nav li
+{
+	list-style-type: none;
+	display: inline;
+	margin-right: 30px;
+}
+.nav
+{
+	text-decoration-color: white;
+	text-decoration-line: underline;
+	text-shadow: 2px 2px 2px #02010a;
+	color: white;
+}
+.nav:active
+{
+	text-decoration: none;
+}
+/**/
+/*Contenido*/
+	
+.principal
+{
+	background-color:#82c3a6;
+	text-align: center;
+    width: 100%;
+}
+.principal img
+{
+	margin: 5px;
+	width: 80%;
+}
+.secundario{
+	width: 100%;
+	display: flex;
+	background-color: #d5c75f;
+	border: 1px solid;
+}
+.izquierdo 
+{
+	text-align: center;
+	width: 50%;
+}
+.izquierdo img
+{
+	margin: 5px;
+	width: 80%;
+	border: 2px solid;
+	transition-property: rotate();
+	transition-duration: 1s;
+}
+.paisajes:hover
+{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px #82c3a6;
+}
+.derecho 
+{
+	text-align: center;
+	width: 50%;
+}
+.derecho img
+{
+	margin: 5px;
+	width: 80%;
+	border: 2px solid;
+	transition-property: translate();
+	transition-duration: 1s;
+}
+.retrato:hover
+{
+	transform: translate(20px,-5px);
+	box-shadow: 2px 2px #82c3a6;
+}
+
+/**/
+/*Pie de Pagina*/
+.pie
+{
+	display: flex;
+	width: 100%;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #C6D5C5;
+}
+.contacto,.redessociales,.terminos,.derechos
+{
+	margin: 10px;
+	width: 25%;
+}
+.redessociales a
+{
+	text-decoration: none;
+	color: black;
+}
+/**/
+/*Paisajes*/
+
+@keyframes arriba {
+  0% {
+    margin-top:150%;
+  }
+  60%
+  {
+  	margin-top:-5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+.galeria
+{
+	width: 100%;
+	display: flex;
+	background-color: #d5c75f;
+}
+.paisajegaleria
+{
+	text-align: center;
+	width: 50%;
+}
+.imagengaleria
+{
+	margin: 5px;
+	width: 80%;
+	border: 2px solid;
+	transition-property: rotate();
+	transition-duration: 1s;
+}
+#imagen
+{
+	-webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+	filter: blur(10px);
+}
+#imagen2,#imagen4,#imagen6
+{
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+	filter: grayscale(100%);
+}
+#imagen3
+{
+	-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+	filter: sepia(90%);
+}
+/**/
+/*Reglas*/
+@media (max-width:900px) {
+	*{margin:0px;}
+	.contenido
+	{
+		width: 50vh
+	}
+	header
+	{
+		display: block;
+		text-align: center;
+	}
+	header nav 
+	{
+		width: 100%;
+		
+	}
+	.logo
+	{
+		width: 100%;
+	}
+	.secundario
+	{
+		display: block;
+	}
+	.izquierdo,.derecho
+	{ width: 100%; }
+	.pie
+	{
+		display: block;
+		margin-top: -10px;
+	}
+	.contacto,.redessociales,.terminos,.derechos
+	{
+		margin: 10px;
+		width: 100%;
+	}
+}
