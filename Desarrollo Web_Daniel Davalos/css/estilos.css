@@ -191,6 +191,7 @@ header nav li
 	header nav 
 	{
 		width: 100%;
+		text-align: center;
 		
 	}
 	.logo
@@ -212,5 +213,18 @@ header nav li
 	{
 		margin: 10px;
 		width: 100%;
+	}
+	.galeria
+	{
+		display: block;
+	}
+	.paisajegaleria
+	{
+		width: 100%;
+	}
+	.imagengaleria
+	{
+		margin: 5px
+		width:100%;
 	}
 }
